@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with me</title>
+
+    <style>
+        body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    overflow-x:hidden;
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+        
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:none;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.formcontainer{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+#subject{
+    height: 120px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.form{
+    position:absolute;
+    top: 80px;
+    left: 400px;
+}
+.right{
+    position:absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 16px;
+}
+.btn{
+    color:rgb(255, 225, 33);
+    border: 2px solid rgb(255, 225, 33);
+    border-radius: 10px;
+    margin: 2px;
+    font-size: large;
+    padding: 5px;
+    text-decoration: none;
+}
+.btn:hover{
+    color:black;
+    border: 2px solid rgb(255, 225, 33);
+    background-color: rgb(255, 225, 33);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.work1{
+    width: 170px;
+    height: 100px;
+    position:absolute;
+    top: 25px;
+    left: 290px;
+}
+
+.work1 img{
+    width:170px;
+    height:100px;
+}
+@media only screen and (min-width: 1000px) and (max-width:1300px) {
+    .form{
+        position: absolute;
+        top:80px;
+        left: 200px;
+        right: 200px;
+    }
+    .work1{
+        position: absolute;
+        top:25px;
+        left: 240px;
+    }
+}
+
+@media only screen and (min-width: 690px) and (max-width:1000px) {
+    .form{
+        position: absolute;
+        top:60px;
+        left: 200px;
+        right: 200px;
+    }
+    .work1{
+        position: absolute;
+        top:15px;
+        left: 120px;
+    }
+    .work1 img{     
+        width:120px;
+        height:70px;
+    }
+    input[type=text], select, textarea{
+        padding: 5px;
+        height: 25px;
+    }
+    label{
+        padding: 5px 5px 5px 0;
+        font-size: 15px;
+    }
+    #subject{
+        height: 70px;
+    }
+    input[type=submit]{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    }
+    .formcontainer{
+    border-radius: 2px;
+    padding: 10px;
+    }
+    .formcontainer h2,p{
+    font-size: 15px;
+    }
+    .formcontainer ::placeholder{
+    font-size: 10px;
+    }
+    .right{
+        position:absolute;
+        top: 30px;
+        right: 25px;
+        font-size: 10px;
+    }
+    .btn{
+        border-radius: 6px;
+        margin: 1px;
+        padding: 2px;
+        font-size: medium;
+    }
+    .btn:hover{
+        border-radius: 6px;
+        margin: 1px;
+        font-size: medium;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .form{
+        position: absolute;
+        top:80px;
+        left: 50px;
+        right: 50px;
+    }
+    input[type=text], select, textarea{
+        padding: 5px;
+        height: 20px;
+    }
+    label{
+        padding: 5px 5px 5px 0;
+        font-size: 12px;
+    }
+    #subject{
+        height: 60px;
+    }
+    input[type=submit]{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    }
+    .formcontainer{
+    border-radius: 2px;
+    padding: 10px;
+    }
+    .formcontainer h2,p{
+    font-size: 15px;
+    }
+    .formcontainer ::placeholder{
+    font-size: 10px;
+    }
+
+    .work1{
+        position: absolute;
+        top:45px;
+        left: 25px;
+    }
+    .work1 img{     
+        width:90px;
+        height:50px;
+    }
+    .right{
+        position:absolute;
+        top: 30px;
+        right: 25px;
+        font-size: 10px;
+    }
+    .btn{
+        border-radius: 6px;
+        margin: 1px;
+        padding: 2px;
+        font-size: medium;
+    }
+    .btn:hover{
+        border-radius: 6px;
+        margin: 1px;
+        font-size: medium;
+        padding: 2px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <!--Navbar-->
+    <header class="header">
+        <div class="right">
+            <a href="index.html" class="btn" target="_self">Back</a>
+        </div>
+    </header>
+    
+
+    <form class="form" action="action.php" style="border:1px solid #ccc">
+        <div class="formcontainer">
+            <h2>Hii there !!</h2>
+            <p>You can fill your information and little bit about project.</p>
+            <hr>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email" name="email" required>
+            <label for="subject">About Project</label> 
+            <div class="col-75">
+                <textarea id="subject" placeholder="Write little bit about project.. " ></textarea>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <div class="work1">
+        <img src="work1.png" alt="..">
+    </div>
+</body>
+</html>
