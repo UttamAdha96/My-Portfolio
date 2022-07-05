@@ -37,7 +37,7 @@ body{
     display:block;
     margin: auto;
     position:absolute;
-    left: 580px;
+    right: 20px;
     margin-top: 50px;
     color:black;
 }
@@ -243,7 +243,7 @@ body{
     
     .mid{
         position:absolute;
-        left: 400px;
+        right: 20px;
         margin-top: 50px;
     }
     .right{
@@ -336,7 +336,7 @@ body{
     
     .mid{
         position:absolute;
-        left: 290px;
+        right: 20px;
         font-size: 22px;
         margin-top: 33px;
     }
@@ -475,9 +475,9 @@ body{
 
 @media only screen and (max-width: 690px) {
 /*Home*/
-    body{
+body{
     height: 785px;
-    }
+}
     .left{
         position:absolute;
         left: 10px;
@@ -487,7 +487,7 @@ body{
 
     .mid{
         position:absolute;
-        left: 190px;
+        right: 20px;
         margin-top: 20px;
     }
     .navbar li a{
@@ -503,7 +503,7 @@ body{
         width: 300px;
         height: 100px;
         font-size: 20px;
-        font-family: cursive;
+        font-family:Georgia, 'Times New Roman', Times, serif;
         position:absolute;
         top: 420px;
         left: 60px;
@@ -521,25 +521,25 @@ body{
         
     }
     .logo .insta{
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         position:absolute;
         top: 265px;
-        left:85px;
+        left: 70px;
     }
     .logo .linkedin{
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         position:absolute;
         top:265px; 
-        left: 125px;
+        left:110px;
     }
     .logo .git{
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         position:absolute;
         top:265px; 
-        left:165px;
+        left:150px;
     }
     .container h2{
         font-size: medium;
@@ -566,15 +566,15 @@ body{
         top: 785px;
     }
      .aboutdetail{
-        width: 300px;
-        height: 100px;
+        width: 330px;
+        height: 120px;
         position:absolute;
         top: 500px; 
         left:20px;
     }
     .abouteducation{
-        width: 300px;
-        height: 100px;
+        width: 320px;
+        height: 105px;
         position:absolute;
         top: 330px; 
         left:20px;
@@ -614,12 +614,12 @@ body{
         font-size: medium;
     }
     .projectcard{
-        height: 150px;
-        width: 200px;
+        height: 180px;
+        width: 240px;
     }
     .projectcard > .projectimage{
-        width: 200px;
-        height: 150px;
+        width: 240px;
+        height: 180px;
     }
     .projectcard > .projecttext{
         font-size: 1em;
@@ -631,7 +631,7 @@ body{
     }
     .card2{
         position:absolute;
-        top: 260px;
+        top: 300px;
         left: 80px;
     }
 
